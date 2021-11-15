@@ -55,7 +55,7 @@ def print_devices():
 class MapType( Enum ):
   SETBUTTON = 1
   SETAXIS = 2
-  SETHAT = 4 # not implemented yet faggg
+  SETHAT = 4 # not implemented yet
 
 class DataType( Enum ):
   NOTE = 1
@@ -179,7 +179,7 @@ class MidiToXInput:
 
 # TODO: Actually make buttons for control and pitch input mapping
 # TODO: and program change mapping buttons too (maybe) lmao
-# todo: make layers of gui dissapear faggoottt
+# todo: make layers of gui dissapear
 class MidiJoyGUI:
   def __init__( self, mapper ):
     self.mapper = mapper
@@ -355,7 +355,7 @@ class MidiJoyGUI:
 
   def newaxisassign( self ):
     if not hasattr( self, "axisassigner" ):
-      # CHANGE AXISASSIGNER TO A DROP DOWN MENU FAGGIT!!!!!!!!!! 
+      # CHANGE AXISASSIGNER TO A DROP DOWN MENU!!!!!!!!!! 
       self.axisassigneroption = "..."
       self.axisassigner = pygame_gui.elements.UIDropDownMenu( [ "X", "Y", "-X", "-Y" ], "...",
         pygame.Rect( addtuple( self.notesposition, ( 0, 200 ) ), ( 100, 30 ) ), manager = self.manager )
